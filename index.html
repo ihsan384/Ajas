@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cinemapremis — A premium movie promotion & PR agency specializing in film campaigns, digital marketing, reels editing, and social media growth." />
+  <meta name="keywords" content="movie promotions, PR agency, film marketing, reels editing, digital marketing, cinema promotions" />
+  <meta property="og:title" content="Cinemapremis | Movie Promotion & PR Agency" />
+  <meta property="og:description" content="Promoting Cinema Beyond Screens — Premium movie PR, campaigns, reels editing & digital marketing." />
+  <meta property="og:type" content="website" />
+  <title>Cinemapremis | Movie Promotion & PR Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="loading">
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Page Loader -->
+  <div id="page-loader" role="status" aria-label="Loading Cinemapremis">
+    <div class="loader-logo">CINEMAPREMIS</div>
+    <div class="loader-bar-container">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- =====================
+       NAVIGATION
+       ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Cinemapremis Home">
+        <span class="nav-logo-text">CINEMAPREMIS</span>
+        <span class="nav-logo-tagline">Movie Promotion Agency</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#campaigns" class="nav-link" id="nav-campaigns">Campaigns</a></li>
+        <li><a href="#testimonials" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+        <li><a href="#instagram" class="nav-link" id="nav-instagram">Instagram</a></li>
+        <li><a href="#contact" class="nav-cta nav-link" id="nav-contact">Contact Us</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="#hero" class="nav-link" data-close-menu>Home</a>
+    <a href="#about" class="nav-link" data-close-menu>About</a>
+    <a href="#services" class="nav-link" data-close-menu>Services</a>
+    <a href="#campaigns" class="nav-link" data-close-menu>Campaigns</a>
+    <a href="#testimonials" class="nav-link" data-close-menu>Testimonials</a>
+    <a href="#instagram" class="nav-link" data-close-menu>Instagram</a>
+    <a href="#contact" class="nav-link" data-close-menu>Contact Us</a>
+  </div>
+
+  <!-- =====================
+       HERO SECTION
+       ===================== -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-reel-lines" aria-hidden="true"></div>
+    <div class="hero-light hero-light-1" aria-hidden="true"></div>
+    <div class="hero-light hero-light-2" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" aria-label="Cinema Promotion Experts">Cinema Promotion Experts</div>
+      <h1 class="hero-title">
+        <span class="line-1">PROMOTING CINEMA</span>
+        <span class="line-2">BEYOND SCREENS</span>
+      </h1>
+      <div class="hero-services" aria-label="Services">
+        <span>Movie Promotions</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>PR Campaigns</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Reels Editing</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Digital Marketing</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#campaigns" class="btn btn-primary magnetic" id="hero-campaigns-btn">
+          <span>View Campaigns</span>
+          <span aria-hidden="true">▶</span>
+        </a>
+        <a href="#contact" class="btn btn-outline magnetic" id="hero-contact-btn">
+          <span>Contact Us</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       ABOUT SECTION
+       ===================== -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+
+      <!-- Brand Story -->
+      <div class="about-story">
+        <div class="about-story-content">
+          <div class="section-badge reveal">Who We Are</div>
+          <h2 class="section-title reveal reveal-delay-1" id="about-title">THE STORY BEHIND <span>CINEMAPREMIS</span></h2>
+          <p class="about-lead reveal reveal-delay-2">Cinemapremis is more than a promotion page. It exists to help filmmakers, artists, and creators bring their stories to a larger audience. We believe every project deserves visibility, recognition, and the opportunity to connect with people who genuinely appreciate cinema.</p>
+          <p class="about-text reveal reveal-delay-3">From independent creators to emerging filmmakers, we help transform creative work into memorable campaigns that build awareness, engagement, and audience connection.</p>
+        </div>
+        <div class="about-story-visual reveal reveal-right">
+          <div class="about-visual-frame">
+            <div class="about-visual-inner">
+              <span class="about-visual-text">CINEMA</span>
+              <span class="about-visual-accent">PREMIS</span>
+            </div>
+            <div class="about-visual-strip">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission / Vision / Why -->
+      <div class="about-pillars">
+        <div class="about-pillar reveal reveal-delay-1">
+          <div class="pillar-icon-wrap">
+            <span class="pillar-icon" aria-hidden="true">🎯</span>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To give every filmmaker and creative project the visibility it deserves. We craft campaigns that connect stories with the audiences who need to hear them — turning creative passion into cultural impact.</p>
+        </div>
+        <div class="about-pillar reveal reveal-delay-2">
+          <div class="pillar-icon-wrap">
+            <span class="pillar-icon" aria-hidden="true">🔭</span>
+          </div>
+          <h3>Our Vision</h3>
+          <p>To become the most trusted name in cinema promotion across India — a creative partner filmmakers turn to when their work deserves to be seen, shared, and celebrated by the right audience.</p>
+        </div>
+        <div class="about-pillar reveal reveal-delay-3">
+          <div class="pillar-icon-wrap">
+            <span class="pillar-icon" aria-hidden="true">🎬</span>
+          </div>
+          <h3>Why Cinemapremis</h3>
+          <p>Because we speak the language of cinema. Every campaign we build is rooted in a genuine understanding of storytelling, film culture, and the passion that drives independent creators forward.</p>
+        </div>
+      </div>
+
+      <!-- Growth Timeline -->
+      <div class="about-journey">
+        <h3 class="journey-title reveal">Our <span>Journey</span></h3>
+        <div class="journey-timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">The Beginning</span>
+              <h4>A Passion Project Takes Shape</h4>
+              <p>Cinemapremis started as a small Instagram page built on a love for cinema. What began as curated film content quickly grew into something bigger — a platform filmmakers noticed and respected.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Building Trust</span>
+              <h4>First Collaborations</h4>
+              <p>Independent filmmakers and short film creators began reaching out for promotional support. We delivered our first campaigns and saw real results — organic reach, genuine engagement, growing audiences.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Growing Stronger</span>
+              <h4>Expanding Services</h4>
+              <p>We expanded from social media promotions into PR campaigns, reels editing, brand collaborations, and full-scale digital marketing — becoming a complete solution for cinema promotion.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-4">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Today</span>
+              <h4>A Trusted Creative Partner</h4>
+              <p>Today, Cinemapremis stands as a growing community of film lovers, creators, and professionals working together to give every story the stage it deserves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="about-stats reveal">
+        <div class="about-stat">
+          <div class="stat-number" data-target="75" data-suffix="+">0</div>
+          <div class="stat-label">Posts</div>
+        </div>
+        <div class="about-stat">
+          <div class="stat-number" data-target="1000" data-suffix="+">0</div>
+          <div class="stat-label">Followers</div>
+        </div>
+        <div class="about-stat">
+          <div class="stat-number" data-target="50" data-suffix="+">0</div>
+          <div class="stat-label">Campaigns</div>
+        </div>
+        <div class="about-stat">
+          <div class="stat-number" data-target="20" data-suffix="+">0</div>
+          <div class="stat-label">Collaborations</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       SERVICES SECTION
+       ===================== -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-badge reveal">Our Expertise</div>
+        <h2 class="section-title reveal reveal-delay-1" id="services-title">WHAT WE <span>DELIVER</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">From concept to campaign — we handle every stage of your film's digital journey with precision and cinematic flair.</p>
+      </div>
+
+      <div class="services-showcase">
+
+        <!-- Service 1: Movie Promotions -->
+        <div class="service-block reveal">
+          <div class="service-block-header">
+            <span class="service-block-icon" aria-hidden="true">🎬</span>
+            <div>
+              <h3>Movie Promotions</h3>
+              <p class="service-block-tagline">Turning films into cultural conversations</p>
+            </div>
+          </div>
+          <p class="service-block-desc">Every film has a story worth telling — and an audience waiting to discover it. Our movie promotion campaigns are built around the unique identity of each project, designed to create genuine excitement and long-term visibility across digital platforms.</p>
+          <div class="service-block-details">
+            <div class="service-benefits">
+              <h4>What You Gain</h4>
+              <ul>
+                <li>Targeted reach to audiences who genuinely care about your film's genre</li>
+                <li>Pre-release buzz that builds anticipation organically</li>
+                <li>Sustained visibility through strategic content planning</li>
+              </ul>
+            </div>
+            <div class="service-process">
+              <h4>Our Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Discovery</strong>
+                    <p>We study your film, its themes, and the audience it speaks to.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Strategy</strong>
+                    <p>We create a tailored campaign plan with content calendars and platform priorities.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Execution</strong>
+                    <p>Launch day. We roll out posts, reels, stories, and engagement tactics across channels.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-outcome">
+            <span class="outcome-label">Expected Outcome</span>
+            <p>A measurable increase in audience awareness, social engagement, and genuine interest around your film's release.</p>
+          </div>
+        </div>
+
+        <!-- Service 2: PR Campaigns -->
+        <div class="service-block reveal">
+          <div class="service-block-header">
+            <span class="service-block-icon" aria-hidden="true">📰</span>
+            <div>
+              <h3>PR Campaigns</h3>
+              <p class="service-block-tagline">Positioning your project where it matters</p>
+            </div>
+          </div>
+          <p class="service-block-desc">Great films deserve great press. Our PR campaigns focus on building credibility and media presence for your project — connecting you with film blogs, community platforms, and industry voices that amplify your story to the right circles.</p>
+          <div class="service-block-details">
+            <div class="service-benefits">
+              <h4>What You Gain</h4>
+              <ul>
+                <li>Coverage across film communities and relevant media outlets</li>
+                <li>Professional press materials that represent your project with care</li>
+                <li>A stronger industry reputation that opens future opportunities</li>
+              </ul>
+            </div>
+            <div class="service-process">
+              <h4>Our Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Research</strong>
+                    <p>We identify the media channels and communities where your project fits naturally.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Outreach</strong>
+                    <p>We craft press materials and pitch your story to relevant platforms and journalists.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Amplification</strong>
+                    <p>Coverage goes live. We coordinate timing and cross-promote across your social channels.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-outcome">
+            <span class="outcome-label">Expected Outcome</span>
+            <p>Increased credibility, wider media reach, and a professional public presence for your project.</p>
+          </div>
+        </div>
+
+        <!-- Service 3: Reels Editing -->
+        <div class="service-block reveal">
+          <div class="service-block-header">
+            <span class="service-block-icon" aria-hidden="true">🎞️</span>
+            <div>
+              <h3>Reels Editing</h3>
+              <p class="service-block-tagline">Cinematic moments in seconds</p>
+            </div>
+          </div>
+          <p class="service-block-desc">Short-form video is where attention lives today. Our editing team creates polished, scroll-stopping reels that capture your film's essence in moments — crafted with cinematic timing, precise cuts, and music that draws viewers in.</p>
+          <div class="service-block-details">
+            <div class="service-benefits">
+              <h4>What You Gain</h4>
+              <ul>
+                <li>Professional-grade reels ready for Instagram, YouTube Shorts, and beyond</li>
+                <li>Content that captures attention within the first two seconds</li>
+                <li>A library of shareable clips that extend your film's digital life</li>
+              </ul>
+            </div>
+            <div class="service-process">
+              <h4>Our Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Material Review</strong>
+                    <p>We review your footage, trailers, and stills to identify the strongest moments.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Editing</strong>
+                    <p>Our editors craft multiple reel formats optimized for each platform's algorithm.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Delivery</strong>
+                    <p>Final reels delivered with captions, hashtag sets, and posting recommendations.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-outcome">
+            <span class="outcome-label">Expected Outcome</span>
+            <p>High-performing video content that drives views, shares, and genuine engagement with your audience.</p>
+          </div>
+        </div>
+
+        <!-- Service 4: Social Media Marketing -->
+        <div class="service-block reveal">
+          <div class="service-block-header">
+            <span class="service-block-icon" aria-hidden="true">📈</span>
+            <div>
+              <h3>Social Media Marketing</h3>
+              <p class="service-block-tagline">Building audiences that stay</p>
+            </div>
+          </div>
+          <p class="service-block-desc">Followers are just numbers. What matters is building a community that actually cares about your work. Our social media strategies focus on authentic growth — real people, real conversations, and real connections around your cinema journey.</p>
+          <div class="service-block-details">
+            <div class="service-benefits">
+              <h4>What You Gain</h4>
+              <ul>
+                <li>A consistent, professional social media presence that grows organically</li>
+                <li>Engagement strategies that turn passive followers into active supporters</li>
+                <li>Content calendars tailored to your project's milestones and release schedule</li>
+              </ul>
+            </div>
+            <div class="service-process">
+              <h4>Our Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Audit</strong>
+                    <p>We analyze your current presence, audience, and content performance.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Strategy</strong>
+                    <p>We build a content plan with posting schedules, formats, and engagement tactics.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Growth</strong>
+                    <p>Consistent execution with performance tracking and ongoing optimization.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-outcome">
+            <span class="outcome-label">Expected Outcome</span>
+            <p>Steady audience growth, higher engagement rates, and a loyal community around your film brand.</p>
+          </div>
+        </div>
+
+        <!-- Service 5: Brand Collaborations -->
+        <div class="service-block reveal">
+          <div class="service-block-header">
+            <span class="service-block-icon" aria-hidden="true">🤝</span>
+            <div>
+              <h3>Brand Collaborations</h3>
+              <p class="service-block-tagline">Partnerships that amplify reach</p>
+            </div>
+          </div>
+          <p class="service-block-desc">The right collaboration can take your project from niche to mainstream. We connect filmmakers with influencers, brands, and cultural platforms that align with their vision — creating partnerships that feel natural and drive real results.</p>
+          <div class="service-block-details">
+            <div class="service-benefits">
+              <h4>What You Gain</h4>
+              <ul>
+                <li>Access to influencer networks and brand partnerships in the entertainment space</li>
+                <li>Co-branded campaigns that reach new audiences authentically</li>
+                <li>Cross-promotional opportunities that multiply your campaign's impact</li>
+              </ul>
+            </div>
+            <div class="service-process">
+              <h4>Our Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Matching</strong>
+                    <p>We identify partners whose audience and values align with your project.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Negotiation</strong>
+                    <p>We handle outreach, terms, and creative alignment between all parties.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Launch</strong>
+                    <p>Collaborative content goes live with coordinated cross-platform promotion.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-outcome">
+            <span class="outcome-label">Expected Outcome</span>
+            <p>Expanded reach through trusted voices, stronger brand perception, and new audience segments for your project.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       CAMPAIGNS / PORTFOLIO SECTION
+       ===================== -->
+  <section id="campaigns" aria-labelledby="campaigns-title">
+    <div class="container">
+      <div class="campaigns-header">
+        <div class="section-badge reveal">Portfolio</div>
+        <h2 class="section-title reveal reveal-delay-1" id="campaigns-title">FEATURED <span>CAMPAIGNS</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">A glimpse into the cinematic campaigns we have brought to life — each one crafted with passion, strategy, and attention to the story behind the project.</p>
+      </div>
+
+      <!-- Campaign Showcase Grid -->
+      <div class="campaigns-grid">
+
+        <div class="campaign-card reveal reveal-delay-1">
+          <div class="poster-art poster-bg-1">
+            <div class="poster-art-logo">
+              <div class="poster-film-strip">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="poster-title-art">SHADOWS<br>OF NOIR</div>
+              <div class="poster-sub-art">A Film Campaign</div>
+            </div>
+          </div>
+          <div class="campaign-overlay">
+            <div class="campaign-category">Thriller · Noir</div>
+            <div class="campaign-title">Shadows of Noir</div>
+            <div class="campaign-results-mini">
+              <span>12K+ Reach</span>
+              <span>850+ Engagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal reveal-delay-2">
+          <div class="poster-art poster-bg-2">
+            <div class="poster-art-logo">
+              <div class="poster-film-strip">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="poster-title-art">STELLAR<br>ECLIPSE</div>
+              <div class="poster-sub-art">A Film Campaign</div>
+            </div>
+          </div>
+          <div class="campaign-overlay">
+            <div class="campaign-category">Sci-Fi · Epic</div>
+            <div class="campaign-title">Stellar Eclipse</div>
+            <div class="campaign-results-mini">
+              <span>18K+ Reach</span>
+              <span>1.2K+ Engagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal reveal-delay-3">
+          <div class="poster-art poster-bg-3">
+            <div class="poster-art-logo">
+              <div class="poster-film-strip">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="poster-title-art">CRIMSON<br>HEARTS</div>
+              <div class="poster-sub-art">A Film Campaign</div>
+            </div>
+          </div>
+          <div class="campaign-overlay">
+            <div class="campaign-category">Romance · Drama</div>
+            <div class="campaign-title">Crimson Hearts</div>
+            <div class="campaign-results-mini">
+              <span>9K+ Reach</span>
+              <span>620+ Engagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal reveal-delay-4">
+          <div class="poster-art poster-bg-4">
+            <div class="poster-art-logo">
+              <div class="poster-film-strip">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="poster-title-art">IRON<br>UPRISING</div>
+              <div class="poster-sub-art">A Film Campaign</div>
+            </div>
+          </div>
+          <div class="campaign-overlay">
+            <div class="campaign-category">Action · Blockbuster</div>
+            <div class="campaign-title">Iron Uprising</div>
+            <div class="campaign-results-mini">
+              <span>22K+ Reach</span>
+              <span>1.5K+ Engagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal reveal-delay-5">
+          <div class="poster-art poster-bg-5">
+            <div class="poster-art-logo">
+              <div class="poster-film-strip">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="poster-title-art">VOID<br>WHISPERS</div>
+              <div class="poster-sub-art">A Film Campaign</div>
+            </div>
+          </div>
+          <div class="campaign-overlay">
+            <div class="campaign-category">Horror · Thriller</div>
+            <div class="campaign-title">Void Whispers</div>
+            <div class="campaign-results-mini">
+              <span>14K+ Reach</span>
+              <span>980+ Engagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal reveal-delay-6">
+          <div class="poster-art poster-bg-6">
+            <div class="poster-art-logo">
+              <div class="poster-film-strip">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="poster-title-art">THE LAST<br>FRAME</div>
+              <div class="poster-sub-art">A Film Campaign</div>
+            </div>
+          </div>
+          <div class="campaign-overlay">
+            <div class="campaign-category">Indie · Art Film</div>
+            <div class="campaign-title">The Last Frame</div>
+            <div class="campaign-results-mini">
+              <span>8K+ Reach</span>
+              <span>540+ Engagement</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Case Studies / Results Summary -->
+      <div class="campaign-case-studies">
+        <h3 class="case-studies-title reveal">Campaign <span>Results</span></h3>
+        <div class="case-studies-grid">
+          <div class="case-study-card reveal reveal-delay-1">
+            <div class="case-study-metric">
+              <span class="metric-value">85K+</span>
+              <span class="metric-label">Total Reach</span>
+            </div>
+            <p>Combined audience reach across all promotional campaigns, spanning Instagram, YouTube, and community platforms.</p>
+          </div>
+          <div class="case-study-card reveal reveal-delay-2">
+            <div class="case-study-metric">
+              <span class="metric-value">5.7K+</span>
+              <span class="metric-label">Total Engagement</span>
+            </div>
+            <p>Likes, comments, shares, and saves generated through creative content strategies and audience-first campaigns.</p>
+          </div>
+          <div class="case-study-card reveal reveal-delay-3">
+            <div class="case-study-metric">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Client Satisfaction</span>
+            </div>
+            <p>Every filmmaker we have worked with has seen measurable results and returned for future collaborations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client Success Story -->
+      <div class="campaign-success reveal">
+        <div class="success-quote-mark" aria-hidden="true">"</div>
+        <blockquote class="success-quote">
+          Working with Cinemapremis was a turning point for our short film. The campaign they built around our premiere created real excitement — our screening was packed, and we gained a community of supporters who still follow our journey today.
+        </blockquote>
+        <div class="success-attribution">
+          <div class="success-avatar" aria-hidden="true">R</div>
+          <div>
+            <div class="success-name">Rahul Mehta</div>
+            <div class="success-role">Independent Film Director · Shadows of Noir</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       WHY CHOOSE US SECTION
+       ===================== -->
+  <section id="why-us" aria-labelledby="why-title">
+    <div class="container">
+      <div class="why-header">
+        <div class="section-badge reveal">Why Cinemapremis</div>
+        <h2 class="section-title reveal reveal-delay-1" id="why-title">THE <span>ADVANTAGE</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">What makes us different is not just what we do — it is how deeply we understand the world of cinema and the filmmakers who live in it.</p>
+      </div>
+
+      <div class="why-features">
+
+        <div class="why-feature reveal">
+          <div class="why-feature-num" aria-hidden="true">01</div>
+          <div class="why-feature-content">
+            <span class="why-feature-icon" aria-hidden="true">🎥</span>
+            <h3>Industry Understanding</h3>
+            <p>We are not a general marketing agency learning about film on the side. Cinema is our world. We understand release cycles, festival seasons, audience sentiment, and the delicate balance between art and promotion. That understanding shapes every decision we make for your campaign — from timing to tone to platform selection.</p>
+          </div>
+        </div>
+
+        <div class="why-feature reveal">
+          <div class="why-feature-num" aria-hidden="true">02</div>
+          <div class="why-feature-content">
+            <span class="why-feature-icon" aria-hidden="true">🎨</span>
+            <h3>Creative Campaign Strategy</h3>
+            <p>Every film is unique, and cookie-cutter campaigns waste potential. We take time to understand the soul of your project and build campaigns that feel like natural extensions of your creative vision. No templates, no generic tactics — just thoughtful, original strategies that resonate with the right audience.</p>
+          </div>
+        </div>
+
+        <div class="why-feature reveal">
+          <div class="why-feature-num" aria-hidden="true">03</div>
+          <div class="why-feature-content">
+            <span class="why-feature-icon" aria-hidden="true">⚡</span>
+            <h3>Fast Communication</h3>
+            <p>Film promotion moves fast, and delays can cost you momentum. We pride ourselves on responsive communication — quick turnarounds on edits, same-day responses, and a team that stays aligned with your timelines. When your film is ready, we are ready.</p>
+          </div>
+        </div>
+
+        <div class="why-feature reveal">
+          <div class="why-feature-num" aria-hidden="true">04</div>
+          <div class="why-feature-content">
+            <span class="why-feature-icon" aria-hidden="true">🌐</span>
+            <h3>Audience Reach</h3>
+            <p>Reach is not just about numbers — it is about finding the people who will actually care about your work. Our campaigns are designed to target cinema-loving audiences through organic strategies, community engagement, and content that earns attention rather than buying it.</p>
+          </div>
+        </div>
+
+        <div class="why-feature reveal">
+          <div class="why-feature-num" aria-hidden="true">05</div>
+          <div class="why-feature-content">
+            <span class="why-feature-icon" aria-hidden="true">✂️</span>
+            <h3>Professional Editing</h3>
+            <p>Our editors do not just cut video — they craft moments. Every reel we produce is built with cinematic timing, deliberate pacing, and an understanding of how audiences consume content on social platforms. The result is content that feels polished, intentional, and impossible to scroll past.</p>
+          </div>
+        </div>
+
+        <div class="why-feature reveal">
+          <div class="why-feature-num" aria-hidden="true">06</div>
+          <div class="why-feature-content">
+            <span class="why-feature-icon" aria-hidden="true">💬</span>
+            <h3>Dedicated Support</h3>
+            <p>We treat every project like our own. From the first conversation to post-campaign analysis, our team stays involved, accessible, and invested in your success. You will never feel like just another client — because to us, every filmmaker we work with is a creative partner.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       TESTIMONIALS SECTION
+       ===================== -->
+  <section id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="testimonials-header">
+        <div class="section-badge reveal">Client Stories</div>
+        <h2 class="section-title reveal reveal-delay-1" id="testimonials-title">WHAT THEY <span>SAY</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">The filmmakers and creators we work with are the best measure of our work. Here is what they have shared about their experience with Cinemapremis.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-project-badge">Feature Film Campaign</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">"Cinemapremis transformed our film's digital presence completely. Their reel edits went viral and drove massive footfall to our premiere. The team understood our vision from the very first meeting and delivered a campaign that felt true to our story. Absolutely phenomenal work — we could not have asked for a better partner."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">R</div>
+            <div>
+              <div class="testimonial-name">Rahul Mehta</div>
+              <div class="testimonial-role">Independent Film Director</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-project-badge">Short Film PR</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">"The PR campaign they ran for our short film got us coverage in major film blogs and communities. They truly understand cinema promotion at a deep level. What impressed me most was how personally invested they were in our project's success — it never felt transactional."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">P</div>
+            <div>
+              <div class="testimonial-name">Priya Sharma</div>
+              <div class="testimonial-role">Producer, Short Films</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card-featured reveal reveal-delay-3">
+          <div class="testimonial-project-badge">Web Series Launch</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">"Working with Cinemapremis was a game-changer for our web series launch. Their social media strategy built real excitement and our following doubled in two weeks. They did not just post content — they created a community around our show. The engagement was unlike anything we had seen before."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">A</div>
+            <div>
+              <div class="testimonial-name">Aditya Krishnan</div>
+              <div class="testimonial-role">Content Creator & Director</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-4">
+          <div class="testimonial-project-badge">Promotional Reels</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">"Their creative team delivered promotional reels that were pure art. Every frame was crafted with such cinematic sensibility. The reels they created captured the heart of our film in under thirty seconds — something our own team had struggled with for weeks. Highly recommended."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">S</div>
+            <div>
+              <div class="testimonial-name">Sneha Iyer</div>
+              <div class="testimonial-role">Cinematographer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-5">
+          <div class="testimonial-project-badge">Documentary Campaign</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-text">"Cinemapremis handled our documentary's entire digital rollout with incredible professionalism. The audience engagement numbers were beyond our expectations. They treated our documentary with the same seriousness they would give a feature film — that dedication really showed in the results."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">V</div>
+            <div>
+              <div class="testimonial-name">Vikram Nair</div>
+              <div class="testimonial-role">Documentary Filmmaker</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       INSTAGRAM SECTION
+       ===================== -->
+  <section id="instagram" aria-labelledby="instagram-title">
+    <div class="container">
+      <div class="instagram-header">
+        <div class="section-badge reveal">Follow Our Journey</div>
+        <h2 class="section-title reveal reveal-delay-1" id="instagram-title">ON <span>INSTAGRAM</span></h2>
+        <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" class="instagram-handle reveal reveal-delay-2">
+          <span aria-hidden="true">📸</span> @cinemapremis
+        </a>
+      </div>
+      <div class="instagram-grid reveal">
+
+        <div class="insta-item" data-modal-content="🎬" data-modal-title="Behind the Scenes" role="button" tabindex="0" aria-label="View post: Behind the Scenes">
+          <div class="insta-bg insta-bg-1">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">BTS<br>🎬</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="🎥" data-modal-title="Reel Preview" role="button" tabindex="0" aria-label="View post: Reel Preview">
+          <div class="insta-bg insta-bg-2">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">REEL<br>🎥</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">▶️</span>
+            <span class="insta-overlay-text">Watch Reel</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="🌟" data-modal-title="Premiere Coverage" role="button" tabindex="0" aria-label="View post: Premiere Coverage">
+          <div class="insta-bg insta-bg-3">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">PREMIERE<br>🌟</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="🎞️" data-modal-title="Film Still" role="button" tabindex="0" aria-label="View post: Film Still">
+          <div class="insta-bg insta-bg-4">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">STILL<br>🎞️</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="📸" data-modal-title="Campaign Art" role="button" tabindex="0" aria-label="View post: Campaign Art">
+          <div class="insta-bg insta-bg-5">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">POSTER<br>📸</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="🏆" data-modal-title="Award Campaign" role="button" tabindex="0" aria-label="View post: Award Campaign">
+          <div class="insta-bg insta-bg-6">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">AWARD<br>🏆</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="🎭" data-modal-title="Director's Spotlight" role="button" tabindex="0" aria-label="View post: Director's Spotlight">
+          <div class="insta-bg insta-bg-7">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">DIRECTOR<br>🎭</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="✨" data-modal-title="Campaign Launch" role="button" tabindex="0" aria-label="View post: Campaign Launch">
+          <div class="insta-bg insta-bg-8">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">LAUNCH<br>✨</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+        <div class="insta-item" data-modal-content="🌊" data-modal-title="Audience Reaction" role="button" tabindex="0" aria-label="View post: Audience Reaction">
+          <div class="insta-bg insta-bg-9">
+            <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">CROWD<br>🌊</div>
+          </div>
+          <div class="insta-overlay">
+            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-text">View Post</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Modal -->
+  <div class="modal-overlay" id="insta-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-inner" id="modal-inner" aria-hidden="true"></div>
+      <div style="padding: 0 24px 24px; text-align: center;">
+        <p id="modal-title" style="font-family: var(--font-alt); font-weight: 700; color: var(--text-primary); font-size: 1rem;"></p>
+        <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; color: var(--primary-light); display:inline-block; margin-top:8px;">View on Instagram →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- =====================
+       CONTACT SECTION
+       ===================== -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-header">
+        <div class="section-badge reveal">Get In Touch</div>
+        <h2 class="section-title reveal reveal-delay-1" id="contact-title">LET'S CREATE <span>TOGETHER</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin: 0 auto;">Ready to give your film the audience it deserves? Whether you have a project ready for launch or an idea still taking shape — we are here to help it shine.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info & CTAs -->
+        <div class="contact-info reveal reveal-left">
+          <h3>Start a Conversation</h3>
+          <p>Tell us about your project — the story, the vision, where you are in the process. We will respond within 24 hours with ideas on how we can help bring your campaign to life.</p>
+
+          <!-- CTA Buttons -->
+          <div class="contact-cta-group">
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="contact-cta-btn cta-whatsapp" id="cta-whatsapp">
+              <span class="cta-icon" aria-hidden="true">💬</span>
+              <div>
+                <span class="cta-label">Chat on WhatsApp</span>
+                <span class="cta-sub">Quick replies · Available daily</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" class="contact-cta-btn cta-instagram" id="cta-instagram">
+              <span class="cta-icon" aria-hidden="true">📸</span>
+              <div>
+                <span class="cta-label">Message on Instagram</span>
+                <span class="cta-sub">@cinemapremis · DM us directly</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Business Details -->
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">📧</span>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-value">cinemapremis@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">🕐</span>
+              <div>
+                <div class="contact-detail-label">Business Hours</div>
+                <div class="contact-detail-value">Mon – Sat: 10am – 8pm IST</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Section -->
+          <div class="contact-trust">
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">✦</span>
+              <span>Trusted by filmmakers across India</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">✦</span>
+              <span>24-hour response guarantee</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">✦</span>
+              <span>No commitment required to start a conversation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaboration Inquiry Form -->
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-title-bar">
+              <h3>Collaboration Inquiry</h3>
+              <p>Fill in the details below and we will craft a tailored plan for your project.</p>
+            </div>
+            <div id="form-fields">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Your full name" autocomplete="name" />
+                  <span class="field-error" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" />
+                  <span class="field-error" id="email-error">Please enter a valid email.</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="+91 00000 00000" autocomplete="tel" />
+                  <span class="field-error" id="phone-error">Please enter your phone number.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-project">Project Type</label>
+                  <select id="contact-project" name="project">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="movie-promotions">Movie Promotions</option>
+                    <option value="pr-management">PR Campaign</option>
+                    <option value="reels-editing">Reels & Video Editing</option>
+                    <option value="social-media">Social Media Marketing</option>
+                    <option value="brand-collab">Brand Collaborations</option>
+                    <option value="full-campaign">Full Campaign Package</option>
+                  </select>
+                  <span class="field-error" id="project-error">Please select a project type.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-budget">Budget Range</label>
+                <select id="contact-budget" name="budget">
+                  <option value="" disabled selected>Select your budget range</option>
+                  <option value="starter">₹5,000 – ₹15,000</option>
+                  <option value="growth">₹15,000 – ₹40,000</option>
+                  <option value="premium">₹40,000 – ₹1,00,000</option>
+                  <option value="custom">Custom / Let's Discuss</option>
+                </select>
+                <span class="field-error" id="budget-error">Please select a budget range.</span>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us about your film, your goals, and the timeline you have in mind..."></textarea>
+                <span class="field-error" id="message-error">Please write a message.</span>
+              </div>
+              <button type="submit" class="form-submit-btn" id="form-submit-btn">
+                <div class="btn-loader" aria-hidden="true"></div>
+                <span class="btn-text">Send Inquiry ✦</span>
+              </button>
+            </div>
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <div class="success-icon" aria-hidden="true">✓</div>
+              <div class="success-title">Inquiry Received!</div>
+              <p class="success-msg">Thank you for reaching out. We will review your project details and get back to you within 24 hours with a tailored campaign plan. Let's create something cinematic together.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-text">CINEMAPREMIS</span>
+            <span class="nav-logo-tagline">Movie Promotion Agency</span>
+          </div>
+          <p>Promoting Cinema Beyond Screens. We craft premium digital campaigns that give films the audience they deserve.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
+            <a href="mailto:cinemapremis@gmail.com" class="social-btn" aria-label="Email">📧</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#campaigns">Campaigns</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Movie Promotions</a></li>
+            <li><a href="#services">PR Management</a></li>
+            <li><a href="#services">Reels Editing</a></li>
+            <li><a href="#services">Social Media Growth</a></li>
+            <li><a href="#services">Brand Collaborations</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Cinemapremis. All rights reserved. Designed with ♥ for cinema.</p>
+        <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
