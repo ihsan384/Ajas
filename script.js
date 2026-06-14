@@ -516,7 +516,7 @@
    CARD HOVER EFFECTS (3D Tilt)
    ============================================================ */
 (function initCardEffects() {
-  const cards = document.querySelectorAll('.about-pillar, .why-feature, .case-study-card');
+  const cards = document.querySelectorAll('.about-pillar, .why-feature, .case-study-card, .impact-card');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
@@ -656,7 +656,7 @@
    INIT LOG
    ============================================================ */
 console.log(
-  '%cCINEMAPREMIS\n%cMovie Promotion & PR Agency\n%c✦ Powered by Cinemapremis',
+  '%cCINEMAPREMIS\n%cMovie Promotion & PR Team\n%c✦ Powered by Cinemapremis',
   'font-family: monospace; font-size: 22px; font-weight: bold; color: #0047FF;',
   'font-family: monospace; font-size: 12px; color: #60a5fa;',
   'font-family: monospace; font-size: 10px; color: #555;'
