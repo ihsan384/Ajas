@@ -30,69 +30,6 @@
   }
 })();
 
-/* ============================================================
-   CUSTOM CURSOR
-   ============================================================ */
-(function initCursor() {
-  const cursor = document.getElementById('cursor');
-  const follower = document.getElementById('cursor-follower');
-  if (!cursor || !follower) return;
-
-  // Hide on mobile
-  if (window.innerWidth <= 768) return;
-
-  let mouseX = 0, mouseY = 0;
-  let followerX = 0, followerY = 0;
-  let isMoving = false;
-  let raf;
-
-  const lerp = (a, b, t) => a + (b - a) * t;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
-    if (!isMoving) {
-      isMoving = true;
-      animateFollower();
-    }
-  });
-
-  function animateFollower() {
-    followerX = lerp(followerX, mouseX, 0.12);
-    followerY = lerp(followerY, mouseY, 0.12);
-    follower.style.left = followerX + 'px';
-    follower.style.top = followerY + 'px';
-    raf = requestAnimationFrame(animateFollower);
-  }
-
-  // Hover effects for interactive elements
-  const hoverTargets = document.querySelectorAll(
-    'a, button, .about-pillar, .service-block, .campaign-card, .why-feature, .testimonial-card, .insta-item, .contact-detail, .contact-cta-btn, .case-study-card, .social-btn, .back-to-top'
-  );
-
-  hoverTargets.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.classList.add('cursor-hover');
-      follower.classList.add('cursor-hover');
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.classList.remove('cursor-hover');
-      follower.classList.remove('cursor-hover');
-    });
-  });
-
-  document.addEventListener('mouseleave', () => {
-    cursor.style.opacity = '0';
-    follower.style.opacity = '0';
-  });
-
-  document.addEventListener('mouseenter', () => {
-    cursor.style.opacity = '1';
-    follower.style.opacity = '1';
-  });
-})();
 
 /* ============================================================
    FLOATING PARTICLES (Canvas)
@@ -697,6 +634,22 @@
     }
   `;
   document.head.appendChild(style);
+})();
+
+/* ============================================================
+   CAMPAIGN IMAGES FADE-IN
+   ============================================================ */
+(function initCampaignImages() {
+  const images = document.querySelectorAll('.campaign-img');
+  images.forEach(img => {
+    img.addEventListener('load', () => {
+      img.classList.add('loaded');
+    });
+    // Fallback if image was cached/already loaded before script executed
+    if (img.complete) {
+      img.classList.add('loaded');
+    }
+  });
 })();
 
 /* ============================================================

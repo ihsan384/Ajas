@@ -18,9 +18,6 @@
   <!-- Noise Overlay -->
   <div class="noise-overlay" aria-hidden="true"></div>
 
-  <!-- Custom Cursor -->
-  <div id="cursor" aria-hidden="true"></div>
-  <div id="cursor-follower" aria-hidden="true"></div>
 
   <!-- Page Loader -->
   <div id="page-loader" role="status" aria-label="Loading Cinemapremis">
@@ -96,7 +93,7 @@
       <div class="hero-buttons">
         <a href="#campaigns" class="btn btn-primary magnetic" id="hero-campaigns-btn">
           <span>View Campaigns</span>
-          <span aria-hidden="true">▶</span>
+          <span aria-hidden="true" style="display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" style="fill: currentColor; vertical-align: middle;"><polygon points="6 3 20 12 6 21 6 3"/></svg></span>
         </a>
         <a href="#contact" class="btn btn-outline magnetic" id="hero-contact-btn">
           <span>Contact Us</span>
@@ -122,8 +119,8 @@
         <div class="about-story-content">
           <div class="section-badge reveal">Who We Are</div>
           <h2 class="section-title reveal reveal-delay-1" id="about-title">THE STORY BEHIND <span>CINEMAPREMIS</span></h2>
-          <p class="about-lead reveal reveal-delay-2">Cinemapremis is more than a promotion page. It exists to help filmmakers, artists, and creators bring their stories to a larger audience. We believe every project deserves visibility, recognition, and the opportunity to connect with people who genuinely appreciate cinema.</p>
-          <p class="about-text reveal reveal-delay-3">From independent creators to emerging filmmakers, we help transform creative work into memorable campaigns that build awareness, engagement, and audience connection.</p>
+          <p class="about-lead reveal reveal-delay-2">Cinemapremis is a dedicated Movie Promotions and PR Team helping filmmakers, artists, and creative projects reach the audience they deserve. We specialize in movie promotions, social media campaigns, reel marketing, and audience engagement strategies that increase visibility and build strong connections with cinema lovers.</p>
+          <p class="about-text reveal reveal-delay-3">From independent films to emerging creators, our mission is to amplify great stories and help creative work gain recognition in the digital world.</p>
         </div>
         <div class="about-story-visual reveal reveal-right">
           <div class="about-visual-frame">
@@ -142,21 +139,27 @@
       <div class="about-pillars">
         <div class="about-pillar reveal reveal-delay-1">
           <div class="pillar-icon-wrap">
-            <span class="pillar-icon" aria-hidden="true">🎯</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </span>
           </div>
           <h3>Our Mission</h3>
           <p>To give every filmmaker and creative project the visibility it deserves. We craft campaigns that connect stories with the audiences who need to hear them — turning creative passion into cultural impact.</p>
         </div>
         <div class="about-pillar reveal reveal-delay-2">
           <div class="pillar-icon-wrap">
-            <span class="pillar-icon" aria-hidden="true">🔭</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </span>
           </div>
           <h3>Our Vision</h3>
           <p>To become the most trusted name in cinema promotion across India — a creative partner filmmakers turn to when their work deserves to be seen, shared, and celebrated by the right audience.</p>
         </div>
         <div class="about-pillar reveal reveal-delay-3">
           <div class="pillar-icon-wrap">
-            <span class="pillar-icon" aria-hidden="true">🎬</span>
+            <span class="pillar-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M7 3v18"/><path d="M17 3v18"/><path d="M3 7h4"/><path d="M3 11h4"/><path d="M3 15h4"/><path d="M17 7h4"/><path d="M17 11h4"/><path d="M17 15h4"/></svg>
+            </span>
           </div>
           <h3>Why Cinemapremis</h3>
           <p>Because we speak the language of cinema. Every campaign we build is rooted in a genuine understanding of storytelling, film culture, and the passion that drives independent creators forward.</p>
@@ -248,7 +251,9 @@
         <!-- Service 1: Movie Promotions -->
         <div class="service-block reveal">
           <div class="service-block-header">
-            <span class="service-block-icon" aria-hidden="true">🎬</span>
+            <span class="service-block-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+            </span>
             <div>
               <h3>Movie Promotions</h3>
               <p class="service-block-tagline">Turning films into cultural conversations</p>
@@ -297,12 +302,14 @@
           </div>
         </div>
 
-        <!-- Service 2: PR Campaigns -->
+        <!-- Service 2: PR Campaign Management -->
         <div class="service-block reveal">
           <div class="service-block-header">
-            <span class="service-block-icon" aria-hidden="true">📰</span>
+            <span class="service-block-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-newspaper"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+            </span>
             <div>
-              <h3>PR Campaigns</h3>
+              <h3>PR Campaign Management</h3>
               <p class="service-block-tagline">Positioning your project where it matters</p>
             </div>
           </div>
@@ -349,12 +356,14 @@
           </div>
         </div>
 
-        <!-- Service 3: Reels Editing -->
+        <!-- Service 3: Reels & Trailer Promotions -->
         <div class="service-block reveal">
           <div class="service-block-header">
-            <span class="service-block-icon" aria-hidden="true">🎞️</span>
+            <span class="service-block-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clapperboard"><path d="M20.2 6 17 11H3.8L7 6h13.2Z"/><path d="M2 12h20"/><path d="M18 12v-5"/><path d="M12 12V7"/><path d="M6 12V7"/><path d="M10 18h4"/><path d="M3 20h18a2 2 0 0 0 2-2V12H1v6a2 2 0 0 0 2 2Z"/></svg>
+            </span>
             <div>
-              <h3>Reels Editing</h3>
+              <h3>Reels & Trailer Promotions</h3>
               <p class="service-block-tagline">Cinematic moments in seconds</p>
             </div>
           </div>
@@ -404,7 +413,9 @@
         <!-- Service 4: Social Media Marketing -->
         <div class="service-block reveal">
           <div class="service-block-header">
-            <span class="service-block-icon" aria-hidden="true">📈</span>
+            <span class="service-block-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </span>
             <div>
               <h3>Social Media Marketing</h3>
               <p class="service-block-tagline">Building audiences that stay</p>
@@ -453,10 +464,66 @@
           </div>
         </div>
 
-        <!-- Service 5: Brand Collaborations -->
+        <!-- Service 5: Audience Engagement -->
         <div class="service-block reveal">
           <div class="service-block-header">
-            <span class="service-block-icon" aria-hidden="true">🤝</span>
+            <span class="service-block-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div>
+              <h3>Audience Engagement</h3>
+              <p class="service-block-tagline">Active connection with film lovers</p>
+            </div>
+          </div>
+          <p class="service-block-desc">We design interactive, community-first campaigns that keep audiences talking. Through targeted movie quizzes, contests, interactive stories, and direct fans spotlights, we build a genuine relationship between your film and the cinema community.</p>
+          <div class="service-block-details">
+            <div class="service-benefits">
+              <h4>What You Gain</h4>
+              <ul>
+                <li>Active, talkative communities excited about your movie</li>
+                <li>Viral fan-created content and comments momentum</li>
+                <li>Strong digital community hubs built on your project's theme</li>
+              </ul>
+            </div>
+            <div class="service-process">
+              <h4>Our Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Concept</strong>
+                    <p>We craft theme-based interactive concepts, quizzes, and discussions.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Launch</strong>
+                    <p>We host contests, polls, and QA sessions on social platforms.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Community</strong>
+                    <p>We actively manage discussion spaces and build user engagement pools.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-outcome">
+            <span class="outcome-label">Expected Outcome</span>
+            <p>Increased comment counts, share metrics, and a loyal community of cinema-goers supporting your project.</p>
+          </div>
+        </div>
+
+        <!-- Service 6: Brand Collaborations -->
+        <div class="service-block reveal">
+          <div class="service-block-header">
+            <span class="service-block-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.07-.83l.47.36a3 3 0 0 1 0 4.24l-1 1"/><path d="m17 17 2 2a1 1 0 1 0 3-3"/><path d="M7 21h4"/></svg>
+            </span>
             <div>
               <h3>Brand Collaborations</h3>
               <p class="service-block-tagline">Partnerships that amplify reach</p>
@@ -527,101 +594,126 @@
 
         <div class="campaign-card reveal reveal-delay-1">
           <div class="poster-art poster-bg-1">
+            <video src="assets/images/premalu.mp4" class="campaign-video" autoplay loop muted playsinline></video>
             <div class="poster-art-logo">
               <div class="poster-film-strip">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="poster-title-art">SHADOWS<br>OF NOIR</div>
-              <div class="poster-sub-art">A Film Campaign</div>
+              <div class="poster-title-art">PREMALU</div>
+              <div class="poster-sub-art">Movie Promotion</div>
             </div>
           </div>
           <div class="campaign-overlay">
-            <div class="campaign-category">Thriller · Noir</div>
-            <div class="campaign-title">Shadows of Noir</div>
+            <div class="campaign-category">Movie Promotion</div>
+            <h3 class="campaign-title">Premalu</h3>
+            <p class="campaign-desc">A high-impact digital promotion campaign driving organic audience engagement and viral audio reels for the romantic comedy hit.</p>
             <div class="campaign-results-mini">
-              <span>12K+ Reach</span>
-              <span>850+ Engagement</span>
+              <span>500K+ Reach</span>
+              <span>45K+ Likes</span>
             </div>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic" style="margin-top: 12px; padding: 8px 16px; font-size: 0.75rem; width: fit-content;" id="campaign-premalu-btn">
+              <span>View Campaign</span>
+            </a>
           </div>
         </div>
 
         <div class="campaign-card reveal reveal-delay-2">
           <div class="poster-art poster-bg-2">
+            <video src="assets/images/manjummel.mp4" class="campaign-video" autoplay loop muted playsinline></video>
             <div class="poster-art-logo">
               <div class="poster-film-strip">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="poster-title-art">STELLAR<br>ECLIPSE</div>
-              <div class="poster-sub-art">A Film Campaign</div>
+              <div class="poster-title-art">MANJUMMEL<br>BOYS</div>
+              <div class="poster-sub-art">PR Campaign</div>
             </div>
           </div>
           <div class="campaign-overlay">
-            <div class="campaign-category">Sci-Fi · Epic</div>
-            <div class="campaign-title">Stellar Eclipse</div>
+            <div class="campaign-category">PR Campaign</div>
+            <h3 class="campaign-title">Manjummel Boys</h3>
+            <p class="campaign-desc">A comprehensive PR push amplifying the friendship narrative and crew interviews, generating massive buzz across digital media.</p>
             <div class="campaign-results-mini">
-              <span>18K+ Reach</span>
-              <span>1.2K+ Engagement</span>
+              <span>750K+ Reach</span>
+              <span>60K+ Likes</span>
             </div>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic" style="margin-top: 12px; padding: 8px 16px; font-size: 0.75rem; width: fit-content;" id="campaign-manjummel-btn">
+              <span>View Campaign</span>
+            </a>
           </div>
         </div>
 
         <div class="campaign-card reveal reveal-delay-3">
           <div class="poster-art poster-bg-3">
+            <video src="assets/images/athiradi.mp4" class="campaign-video" autoplay loop muted playsinline></video>
             <div class="poster-art-logo">
               <div class="poster-film-strip">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="poster-title-art">CRIMSON<br>HEARTS</div>
-              <div class="poster-sub-art">A Film Campaign</div>
+              <div class="poster-title-art">SIVAJI<br>THE BOSS</div>
+              <div class="poster-sub-art">Retro Hype Campaign</div>
             </div>
           </div>
           <div class="campaign-overlay">
-            <div class="campaign-category">Romance · Drama</div>
-            <div class="campaign-title">Crimson Hearts</div>
+            <div class="campaign-category">Retro Hype Campaign</div>
+            <h3 class="campaign-title">Sivaji: The Boss</h3>
+            <p class="campaign-desc">A nostalgia-driven social media campaign celebrating the iconic Rajinikanth track and visual aesthetics for maximum reels engagement.</p>
             <div class="campaign-results-mini">
-              <span>9K+ Reach</span>
-              <span>620+ Engagement</span>
+              <span>1.2M+ Reach</span>
+              <span>95K+ Likes</span>
             </div>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic" style="margin-top: 12px; padding: 8px 16px; font-size: 0.75rem; width: fit-content;" id="campaign-athiradi-btn">
+              <span>View Campaign</span>
+            </a>
           </div>
         </div>
 
         <div class="campaign-card reveal reveal-delay-4">
           <div class="poster-art poster-bg-4">
+            <video src="assets/images/karupu.mp4" class="campaign-video" autoplay loop muted playsinline></video>
             <div class="poster-art-logo">
               <div class="poster-film-strip">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="poster-title-art">IRON<br>UPRISING</div>
-              <div class="poster-sub-art">A Film Campaign</div>
+              <div class="poster-title-art">AADUKALAM</div>
+              <div class="poster-sub-art">Reels Marketing</div>
             </div>
           </div>
           <div class="campaign-overlay">
-            <div class="campaign-category">Action · Blockbuster</div>
-            <div class="campaign-title">Iron Uprising</div>
+            <div class="campaign-category">Reels Marketing</div>
+            <h3 class="campaign-title">Aadukalam</h3>
+            <p class="campaign-desc">An audience-focused video campaign leveraging Dhanush's viral dance clips to create trending loops and high engagement.</p>
             <div class="campaign-results-mini">
-              <span>22K+ Reach</span>
-              <span>1.5K+ Engagement</span>
+              <span>850K+ Reach</span>
+              <span>70K+ Likes</span>
             </div>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic" style="margin-top: 12px; padding: 8px 16px; font-size: 0.75rem; width: fit-content;" id="campaign-karupu-btn">
+              <span>View Campaign</span>
+            </a>
           </div>
         </div>
 
         <div class="campaign-card reveal reveal-delay-5">
           <div class="poster-art poster-bg-5">
+            <img src="assets/images/bathelem.jpg" alt="Summer in Bethlehem Campaign" class="campaign-img" />
             <div class="poster-art-logo">
               <div class="poster-film-strip">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="poster-title-art">VOID<br>WHISPERS</div>
-              <div class="poster-sub-art">A Film Campaign</div>
+              <div class="poster-title-art">SUMMER IN<br>BETHLEHEM</div>
+              <div class="poster-sub-art">Classic Film Promotion</div>
             </div>
           </div>
           <div class="campaign-overlay">
-            <div class="campaign-category">Horror · Thriller</div>
-            <div class="campaign-title">Void Whispers</div>
+            <div class="campaign-category">Classic Film Promotion</div>
+            <h3 class="campaign-title">Summer in Bethlehem</h3>
+            <p class="campaign-desc">A commemorative campaign celebrating the legacy of the classic Malayalam film, engaging fans with trivia and high-res stills.</p>
             <div class="campaign-results-mini">
-              <span>14K+ Reach</span>
-              <span>980+ Engagement</span>
+              <span>300K+ Reach</span>
+              <span>28K+ Likes</span>
             </div>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic" style="margin-top: 12px; padding: 8px 16px; font-size: 0.75rem; width: fit-content;" id="campaign-bathelem-btn">
+              <span>View Campaign</span>
+            </a>
           </div>
         </div>
 
@@ -631,17 +723,21 @@
               <div class="poster-film-strip">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="poster-title-art">THE LAST<br>FRAME</div>
-              <div class="poster-sub-art">A Film Campaign</div>
+              <div class="poster-title-art">BRAMAYUGAM</div>
+              <div class="poster-sub-art">Audience Engagement</div>
             </div>
           </div>
           <div class="campaign-overlay">
-            <div class="campaign-category">Indie · Art Film</div>
-            <div class="campaign-title">The Last Frame</div>
+            <div class="campaign-category">Audience Engagement</div>
+            <h3 class="campaign-title">Bramayugam</h3>
+            <p class="campaign-desc">A dedicated dark-theme interactive campaign with cinematic polls, reviews, and art spotlights engaging movie enthusiasts.</p>
             <div class="campaign-results-mini">
-              <span>8K+ Reach</span>
-              <span>540+ Engagement</span>
+              <span>450K+ Reach</span>
+              <span>38K+ Likes</span>
             </div>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic" style="margin-top: 12px; padding: 8px 16px; font-size: 0.75rem; width: fit-content;" id="campaign-bramayugam-btn">
+              <span>View Campaign</span>
+            </a>
           </div>
         </div>
 
@@ -711,7 +807,9 @@
         <div class="why-feature reveal">
           <div class="why-feature-num" aria-hidden="true">01</div>
           <div class="why-feature-content">
-            <span class="why-feature-icon" aria-hidden="true">🎥</span>
+            <span class="why-feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+            </span>
             <h3>Industry Understanding</h3>
             <p>We are not a general marketing agency learning about film on the side. Cinema is our world. We understand release cycles, festival seasons, audience sentiment, and the delicate balance between art and promotion. That understanding shapes every decision we make for your campaign — from timing to tone to platform selection.</p>
           </div>
@@ -720,7 +818,9 @@
         <div class="why-feature reveal">
           <div class="why-feature-num" aria-hidden="true">02</div>
           <div class="why-feature-content">
-            <span class="why-feature-icon" aria-hidden="true">🎨</span>
+            <span class="why-feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.92 0 1.63-.77 1.63-1.7 0-.44-.18-.85-.46-1.17-.29-.3-.47-.73-.47-1.19 0-.92.75-1.67 1.67-1.67h1.9c3.07 0 5.61-2.54 5.61-5.61C21.37 6.06 17.17 2 12 2Z"/></svg>
+            </span>
             <h3>Creative Campaign Strategy</h3>
             <p>Every film is unique, and cookie-cutter campaigns waste potential. We take time to understand the soul of your project and build campaigns that feel like natural extensions of your creative vision. No templates, no generic tactics — just thoughtful, original strategies that resonate with the right audience.</p>
           </div>
@@ -729,7 +829,9 @@
         <div class="why-feature reveal">
           <div class="why-feature-num" aria-hidden="true">03</div>
           <div class="why-feature-content">
-            <span class="why-feature-icon" aria-hidden="true">⚡</span>
+            <span class="why-feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
             <h3>Fast Communication</h3>
             <p>Film promotion moves fast, and delays can cost you momentum. We pride ourselves on responsive communication — quick turnarounds on edits, same-day responses, and a team that stays aligned with your timelines. When your film is ready, we are ready.</p>
           </div>
@@ -738,7 +840,9 @@
         <div class="why-feature reveal">
           <div class="why-feature-num" aria-hidden="true">04</div>
           <div class="why-feature-content">
-            <span class="why-feature-icon" aria-hidden="true">🌐</span>
+            <span class="why-feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </span>
             <h3>Audience Reach</h3>
             <p>Reach is not just about numbers — it is about finding the people who will actually care about your work. Our campaigns are designed to target cinema-loving audiences through organic strategies, community engagement, and content that earns attention rather than buying it.</p>
           </div>
@@ -747,7 +851,9 @@
         <div class="why-feature reveal">
           <div class="why-feature-num" aria-hidden="true">05</div>
           <div class="why-feature-content">
-            <span class="why-feature-icon" aria-hidden="true">✂️</span>
+            <span class="why-feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scissors"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="9.8" y1="8.2" x2="21" y2="19.4"/><line x1="9.8" y1="15.8" x2="12.5" y2="13.1"/><line x1="16.2" y1="9.4" x2="21" y2="4.6"/></svg>
+            </span>
             <h3>Professional Editing</h3>
             <p>Our editors do not just cut video — they craft moments. Every reel we produce is built with cinematic timing, deliberate pacing, and an understanding of how audiences consume content on social platforms. The result is content that feels polished, intentional, and impossible to scroll past.</p>
           </div>
@@ -756,7 +862,9 @@
         <div class="why-feature reveal">
           <div class="why-feature-num" aria-hidden="true">06</div>
           <div class="why-feature-content">
-            <span class="why-feature-icon" aria-hidden="true">💬</span>
+            <span class="why-feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
             <h3>Dedicated Support</h3>
             <p>We treat every project like our own. From the first conversation to post-campaign analysis, our team stays involved, accessible, and invested in your success. You will never feel like just another client — because to us, every filmmaker we work with is a creative partner.</p>
           </div>
@@ -870,8 +978,8 @@
       <div class="instagram-header">
         <div class="section-badge reveal">Follow Our Journey</div>
         <h2 class="section-title reveal reveal-delay-1" id="instagram-title">ON <span>INSTAGRAM</span></h2>
-        <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" class="instagram-handle reveal reveal-delay-2">
-          <span aria-hidden="true">📸</span> @cinemapremis
+        <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="instagram-handle reveal reveal-delay-2">
+          <span aria-hidden="true" style="display: inline-flex; vertical-align: middle; margin-right: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" style="vertical-align: middle;"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span> @cinemapremis._
         </a>
       </div>
       <div class="instagram-grid reveal">
@@ -881,7 +989,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">BTS<br>🎬</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -891,7 +1001,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">REEL<br>🎥</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">▶️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </span>
             <span class="insta-overlay-text">Watch Reel</span>
           </div>
         </div>
@@ -901,7 +1013,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">PREMIERE<br>🌟</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -911,7 +1025,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">STILL<br>🎞️</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -921,7 +1037,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">POSTER<br>📸</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -931,7 +1049,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">AWARD<br>🏆</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -941,7 +1061,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">DIRECTOR<br>🎭</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -951,7 +1073,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">LAUNCH<br>✨</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -961,7 +1085,9 @@
             <div class="poster-title-art" style="font-size:1rem;opacity:0.6;letter-spacing:0.2em;">CROWD<br>🌊</div>
           </div>
           <div class="insta-overlay">
-            <span class="insta-overlay-icon" aria-hidden="true">👁️</span>
+            <span class="insta-overlay-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="insta-overlay-text">View Post</span>
           </div>
         </div>
@@ -977,7 +1103,7 @@
       <div class="modal-inner" id="modal-inner" aria-hidden="true"></div>
       <div style="padding: 0 24px 24px; text-align: center;">
         <p id="modal-title" style="font-family: var(--font-alt); font-weight: 700; color: var(--text-primary); font-size: 1rem;"></p>
-        <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; color: var(--primary-light); display:inline-block; margin-top:8px;">View on Instagram →</a>
+        <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; color: var(--primary-light); display:inline-block; margin-top:8px;">View on Instagram →</a>
       </div>
     </div>
   </div>
@@ -1004,33 +1130,61 @@
 
           <!-- CTA Buttons -->
           <div class="contact-cta-group">
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="contact-cta-btn cta-whatsapp" id="cta-whatsapp">
-              <span class="cta-icon" aria-hidden="true">💬</span>
+            <a href="https://wa.me/917306608100" target="_blank" rel="noopener noreferrer" class="contact-cta-btn cta-whatsapp" id="cta-whatsapp">
+              <span class="cta-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              </span>
               <div>
                 <span class="cta-label">Chat on WhatsApp</span>
                 <span class="cta-sub">Quick replies · Available daily</span>
               </div>
             </a>
-            <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" class="contact-cta-btn cta-instagram" id="cta-instagram">
-              <span class="cta-icon" aria-hidden="true">📸</span>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="contact-cta-btn cta-instagram" id="cta-instagram">
+              <span class="cta-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </span>
               <div>
                 <span class="cta-label">Message on Instagram</span>
-                <span class="cta-sub">@cinemapremis · DM us directly</span>
+                <span class="cta-sub">@cinemapremis._ · DM us directly</span>
               </div>
             </a>
+            <a href="mailto:cinemapremis@gmail.com" class="contact-cta-btn cta-email" id="cta-email">
+              <span class="cta-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <div>
+                <span class="cta-label">Email Us</span>
+                <span class="cta-sub">cinemapremis@gmail.com · Business inquiries</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Collaboration Offerings -->
+          <div class="contact-offerings" style="margin-bottom: 32px;">
+            <h4 style="font-family: var(--font-alt); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-light); margin-bottom: 16px;">COLLABORATION SERVICES</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; padding-left: 0;">
+              <li style="font-size: 0.88rem; color: var(--text-secondary); list-style: none; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; top: 4px; color: var(--primary); display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span><strong>Promote Your Movie:</strong> Targeted campaigns driving pre-release hype and ticket bookings.</li>
+              <li style="font-size: 0.88rem; color: var(--text-secondary); list-style: none; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; top: 4px; color: var(--primary); display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span><strong>PR Partnership Requests:</strong> Elevate your project’s public presence in leading cinema spaces.</li>
+              <li style="font-size: 0.88rem; color: var(--text-secondary); list-style: none; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; top: 4px; color: var(--primary); display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span><strong>Brand Collaborations:</strong> Strategic influencer integrations and co-branded content.</li>
+              <li style="font-size: 0.88rem; color: var(--text-secondary); list-style: none; position: relative; padding-left: 20px;"><span style="position: absolute; left: 0; top: 4px; color: var(--primary); display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span><strong>Event Promotions:</strong> Audio launches, trailer releases, and digital coverage for premiere events.</li>
+            </ul>
           </div>
 
           <!-- Business Details -->
           <div class="contact-details">
             <div class="contact-detail">
-              <span class="contact-detail-icon" aria-hidden="true">📧</span>
+              <span class="contact-detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
               <div>
                 <div class="contact-detail-label">Email</div>
                 <div class="contact-detail-value">cinemapremis@gmail.com</div>
               </div>
             </div>
             <div class="contact-detail">
-              <span class="contact-detail-icon" aria-hidden="true">🕐</span>
+              <span class="contact-detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
               <div>
                 <div class="contact-detail-label">Business Hours</div>
                 <div class="contact-detail-value">Mon – Sat: 10am – 8pm IST</div>
@@ -1041,15 +1195,15 @@
           <!-- Trust Section -->
           <div class="contact-trust">
             <div class="trust-item">
-              <span class="trust-icon" aria-hidden="true">✦</span>
+              <span class="trust-icon" aria-hidden="true" style="display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span>
               <span>Trusted by filmmakers across India</span>
             </div>
             <div class="trust-item">
-              <span class="trust-icon" aria-hidden="true">✦</span>
+              <span class="trust-icon" aria-hidden="true" style="display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span>
               <span>24-hour response guarantee</span>
             </div>
             <div class="trust-item">
-              <span class="trust-icon" aria-hidden="true">✦</span>
+              <span class="trust-icon" aria-hidden="true" style="display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span>
               <span>No commitment required to start a conversation</span>
             </div>
           </div>
@@ -1085,12 +1239,11 @@
                   <label for="contact-project">Project Type</label>
                   <select id="contact-project" name="project">
                     <option value="" disabled selected>Select a service</option>
-                    <option value="movie-promotions">Movie Promotions</option>
-                    <option value="pr-management">PR Campaign</option>
-                    <option value="reels-editing">Reels & Video Editing</option>
-                    <option value="social-media">Social Media Marketing</option>
-                    <option value="brand-collab">Brand Collaborations</option>
-                    <option value="full-campaign">Full Campaign Package</option>
+                    <option value="promote-movie">Promote Your Movie</option>
+                    <option value="pr-partnership">PR Partnership Requests</option>
+                    <option value="brand-collaboration">Brand Collaborations</option>
+                    <option value="event-promotion">Event Promotions</option>
+                    <option value="other-inquiry">General Inquiry</option>
                   </select>
                   <span class="field-error" id="project-error">Please select a project type.</span>
                 </div>
@@ -1142,10 +1295,18 @@
           </div>
           <p>Promoting Cinema Beyond Screens. We craft premium digital campaigns that give films the audience they deserve.</p>
           <div class="footer-social" aria-label="Social media links">
-            <a href="https://instagram.com/cinemapremis" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">📸</a>
-            <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
-            <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
-            <a href="mailto:cinemapremis@gmail.com" class="social-btn" aria-label="Email">📧</a>
+            <a href="https://www.instagram.com/cinemapremis._/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><path d="m10 15 5-3-5-3v6z"/></svg>
+            </a>
+            <a href="https://wa.me/917306608100" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            </a>
+            <a href="mailto:cinemapremis@gmail.com" class="social-btn" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
           </div>
         </div>
 
@@ -1165,9 +1326,10 @@
           <h4>Services</h4>
           <ul>
             <li><a href="#services">Movie Promotions</a></li>
-            <li><a href="#services">PR Management</a></li>
-            <li><a href="#services">Reels Editing</a></li>
-            <li><a href="#services">Social Media Growth</a></li>
+            <li><a href="#services">PR Campaign Management</a></li>
+            <li><a href="#services">Reels & Trailer Promotions</a></li>
+            <li><a href="#services">Social Media Marketing</a></li>
+            <li><a href="#services">Audience Engagement</a></li>
             <li><a href="#services">Brand Collaborations</a></li>
           </ul>
         </div>

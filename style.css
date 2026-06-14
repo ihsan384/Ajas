@@ -60,7 +60,6 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
   overflow-x: hidden;
-  cursor: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -225,7 +224,7 @@ ul {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  cursor: none;
+  cursor: pointer;
   border: none;
   transition: var(--transition-mid);
   position: relative;
@@ -426,7 +425,7 @@ ul {
   display: none;
   flex-direction: column;
   gap: 5px;
-  cursor: none;
+  cursor: pointer;
   padding: 8px;
 }
 
@@ -851,7 +850,6 @@ ul {
   padding: 44px 36px;
   backdrop-filter: blur(10px);
   transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: none;
   overflow: hidden;
 }
 
@@ -892,7 +890,21 @@ ul {
 }
 
 .pillar-icon {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillar-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--primary-light);
+  transition: var(--transition-mid);
+}
+
+.about-pillar:hover .pillar-icon svg {
+  stroke: #FFFFFF;
+  filter: drop-shadow(0 0 8px var(--primary-light));
 }
 
 .about-pillar:hover .pillar-icon-wrap {
@@ -1113,7 +1125,6 @@ ul {
   transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
-  cursor: none;
 }
 
 .service-block::before {
@@ -1145,7 +1156,6 @@ ul {
 }
 
 .service-block-icon {
-  font-size: 2.5rem;
   flex-shrink: 0;
   width: 64px;
   height: 64px;
@@ -1156,6 +1166,18 @@ ul {
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
+}
+
+.service-block-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--primary-light);
+  transition: var(--transition-mid);
+}
+
+.service-block:hover .service-block-icon svg {
+  stroke: #FFFFFF;
+  filter: drop-shadow(0 0 8px var(--primary-light));
 }
 
 .service-block:hover .service-block-icon {
@@ -1318,7 +1340,6 @@ ul {
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 2/3;
-  cursor: none;
   box-shadow: var(--shadow-card);
   border: 1px solid var(--border-glass);
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -1500,7 +1521,6 @@ ul {
   backdrop-filter: blur(10px);
   text-align: center;
   transition: all 0.4s ease;
-  cursor: none;
 }
 
 .case-study-card:hover {
@@ -1644,7 +1664,6 @@ ul {
   padding: 44px 40px;
   backdrop-filter: blur(10px);
   transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: none;
   overflow: hidden;
 }
 
@@ -1693,10 +1712,23 @@ ul {
 }
 
 .why-feature-icon {
-  font-size: 2rem;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
   transition: transform 0.4s ease;
+}
+
+.why-feature-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--primary-light);
+  transition: var(--transition-mid);
+}
+
+.why-feature:hover .why-feature-icon svg {
+  stroke: #FFFFFF;
+  filter: drop-shadow(0 0 8px var(--primary-light));
 }
 
 .why-feature:hover .why-feature-icon {
@@ -1884,7 +1916,7 @@ ul {
   aspect-ratio: 1;
   border-radius: var(--radius-md);
   overflow: hidden;
-  cursor: none;
+  cursor: pointer;
   border: 1px solid var(--border-glass);
   transition: all 0.4s ease;
 }
@@ -1925,8 +1957,21 @@ ul {
 }
 
 .insta-overlay-icon {
-  font-size: 1.5rem;
-  filter: drop-shadow(0 0 10px var(--primary-glow));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insta-overlay-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: #FFFFFF;
+  transition: var(--transition-mid);
+}
+
+.insta-item:hover .insta-overlay-icon svg {
+  stroke: var(--primary-light);
+  filter: drop-shadow(0 0 8px var(--primary-light));
 }
 
 .insta-overlay-text {
@@ -2007,7 +2052,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -2070,7 +2115,7 @@ ul {
   border-radius: var(--radius-md);
   backdrop-filter: blur(10px);
   transition: all 0.35s ease;
-  cursor: none;
+  cursor: pointer;
 }
 
 .contact-cta-btn:hover {
@@ -2090,8 +2135,36 @@ ul {
 }
 
 .cta-icon {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+}
+
+.cta-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--primary-light);
+  transition: var(--transition-mid);
+}
+
+.contact-cta-btn:hover .cta-icon svg {
+  stroke: #FFFFFF;
+}
+
+.cta-whatsapp:hover .cta-icon svg {
+  stroke: #25d366;
+  filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.6));
+}
+
+.cta-instagram:hover .cta-icon svg {
+  stroke: #e1306c;
+  filter: drop-shadow(0 0 8px rgba(225, 48, 108, 0.6));
+}
+
+.cta-email:hover .cta-icon svg {
+  stroke: #2563FF;
+  filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.6));
 }
 
 .cta-label {
@@ -2135,9 +2208,22 @@ ul {
 }
 
 .contact-detail-icon {
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  margin-top: 2px;
+}
+
+.contact-detail-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--primary-light);
+  transition: var(--transition-mid);
+}
+
+.contact-detail:hover .contact-detail-icon svg {
+  stroke: #FFFFFF;
+  filter: drop-shadow(0 0 8px var(--primary-light));
 }
 
 .contact-detail-label {
@@ -2170,8 +2256,42 @@ ul {
 }
 
 .trust-icon {
-  color: var(--primary);
-  font-size: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-icon svg {
+  width: 12px;
+  height: 12px;
+  stroke: var(--primary-light);
+  fill: var(--primary-faint);
+  transition: var(--transition-mid);
+}
+
+.contact-trust .trust-item:hover .trust-icon svg {
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+  filter: drop-shadow(0 0 6px var(--primary-light));
+}
+
+/* Collaboration Offerings Transitions */
+.contact-offerings li {
+  transition: var(--transition-mid);
+}
+
+.contact-offerings li:hover {
+  color: #FFFFFF !important;
+  transform: translateX(4px);
+}
+
+.contact-offerings li svg {
+  transition: var(--transition-mid);
+}
+
+.contact-offerings li:hover svg {
+  stroke: #FFFFFF !important;
+  filter: drop-shadow(0 0 6px var(--primary-light));
 }
 
 /* Contact Form */
@@ -2313,7 +2433,7 @@ ul {
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -2445,10 +2565,16 @@ footer::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
   color: var(--text-secondary);
   transition: all 0.3s ease;
-  cursor: none;
+  cursor: pointer;
+}
+
+.social-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--text-secondary);
+  transition: var(--transition-mid);
 }
 
 .social-btn:hover {
@@ -2457,6 +2583,26 @@ footer::before {
   background: var(--primary-faint);
   box-shadow: 0 0 15px var(--primary-glow);
   transform: translateY(-3px);
+}
+
+.social-btn[aria-label="Instagram"]:hover svg {
+  stroke: #e1306c;
+  filter: drop-shadow(0 0 8px rgba(225, 48, 108, 0.6));
+}
+
+.social-btn[aria-label="YouTube"]:hover svg {
+  stroke: #ff0000;
+  filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6));
+}
+
+.social-btn[aria-label="WhatsApp"]:hover svg {
+  stroke: #25d366;
+  filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.6));
+}
+
+.social-btn[aria-label="Email"]:hover svg {
+  stroke: #2563FF;
+  filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.6));
 }
 
 .footer-col h4 {
@@ -2525,7 +2671,7 @@ footer::before {
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
@@ -2657,20 +2803,6 @@ footer::before {
 
   body, html {
     overflow-x: hidden;
-  }
-  
-  #cursor, #cursor-follower {
-    display: none !important;
-  }
-  body {
-    cursor: default;
-  }
-  
-  .btn, .about-pillar, .service-block, .campaign-card, .why-feature, .testimonial-card,
-  .social-btn, .back-to-top, .insta-item, .modal-close,
-  .form-submit-btn, .contact-detail, .contact-cta-btn, .case-study-card,
-  .nav-cta, .nav-link, .footer-col ul li a, .nav-hamburger {
-    cursor: pointer;
   }
 
   .section-title {
@@ -2920,4 +3052,66 @@ footer::before {
 /* Magnetic button effect */
 .magnetic {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Campaign Poster Image styling */
+.campaign-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  inset: 0;
+}
+.campaign-img.loaded {
+  opacity: 1;
+}
+.campaign-card:hover .campaign-img {
+  transform: scale(1.05);
+}
+
+/* Campaign Video Loop styling */
+.campaign-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.5s ease;
+}
+.campaign-card:hover .campaign-video {
+  transform: scale(1.05);
+}
+
+/* Contact Email Button custom hover color */
+.cta-email:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.1);
+}
+
+/* Campaign Card Hover Content details */
+.campaign-desc, .campaign-card .btn {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.campaign-card:hover .campaign-desc,
+.campaign-card:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.campaign-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Hide placeholder logo text when a video or image background is present to avoid overlapping text clutter */
+.campaign-video ~ .poster-art-logo,
+.campaign-img ~ .poster-art-logo {
+  display: none !important;
 }
