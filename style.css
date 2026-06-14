@@ -3276,3 +3276,23 @@ footer::before {
     grid-template-columns: 1fr;
   }
 }
+
+/* Developer badge styling */
+.footer-developer {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: var(--font-alt);
+  letter-spacing: 0.05em;
+}
+
+.footer-developer a {
+  color: var(--primary-light);
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-developer a:hover {
+  color: #FFFFFF;
+  text-shadow: 0 0 10px var(--primary-glow);
+}
