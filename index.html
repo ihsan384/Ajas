@@ -9,9 +9,11 @@
   <meta property="og:description" content="Amplifying Stories. Expanding Reach. Building Audience Connections. Dedicated Movie Promotion & PR Team." />
   <meta property="og:type" content="website" />
   <title>Cinemapremis | Movie Promotion & PR Team</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0a0a0a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="loading">
 
@@ -46,7 +48,7 @@
         <li><a href="#campaigns" class="nav-link" id="nav-campaigns">Campaigns</a></li>
         <li><a href="#testimonials" class="nav-link" id="nav-testimonials">Testimonials</a></li>
         <li><a href="#instagram" class="nav-link" id="nav-instagram">Instagram</a></li>
-        <li><a href="#contact" class="nav-cta nav-link" id="nav-contact">Contact Us</a></li>
+        <li><a href="#contact" class="btn btn-outline nav-cta" id="nav-contact">Let's Talk</a></li>
       </ul>
       <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
@@ -64,7 +66,7 @@
     <a href="#campaigns" class="nav-link" data-close-menu>Campaigns</a>
     <a href="#testimonials" class="nav-link" data-close-menu>Testimonials</a>
     <a href="#instagram" class="nav-link" data-close-menu>Instagram</a>
-    <a href="#contact" class="nav-link" data-close-menu>Contact Us</a>
+    <a href="#contact" class="btn btn-primary" data-close-menu>Let's Talk</a>
   </div>
 
   <!-- =====================
@@ -78,8 +80,8 @@
     <div class="hero-content">
       <div class="hero-eyebrow" aria-label="Cinema Promotion Experts">Cinema Promotion Experts</div>
       <h1 class="hero-title">
-        <span class="line-1">PROMOTING CINEMA</span>
-        <span class="line-2">BEYOND SCREENS</span>
+        <span class="line-1">Promoting Cinema</span>
+        <span class="line-2 highlight">Beyond Screens.</span>
       </h1>
       <div class="hero-services" aria-label="Services">
         <span>Movie Promotions</span>
@@ -92,13 +94,13 @@
         <span class="dot" aria-hidden="true"></span>
         <span>Brand Collaborations</span>
       </div>
-      <div class="hero-buttons">
+      <div class="hero-buttons hero-actions">
         <a href="#campaigns" class="btn btn-primary magnetic" id="hero-campaigns-btn">
           <span>View Campaigns</span>
           <span aria-hidden="true" style="display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" style="fill: currentColor; vertical-align: middle;"><polygon points="6 3 20 12 6 21 6 3"/></svg></span>
         </a>
-        <a href="#contact" class="btn btn-outline magnetic" id="hero-contact-btn">
-          <span>Contact Us</span>
+        <a href="#contact" class="btn btn-secondary magnetic" id="hero-contact-btn">
+          <span>Let's Talk</span>
         </a>
       </div>
     </div>
@@ -113,7 +115,7 @@
   <!-- =====================
        ABOUT SECTION
        ===================== -->
-  <section id="about" aria-labelledby="about-title">
+  <section id="about" class="section" aria-labelledby="about-title">
     <div class="container">
 
       <!-- Brand Story -->
@@ -247,7 +249,7 @@
   <!-- =====================
        OUR IMPACT SECTION
        ===================== -->
-  <section id="impact" aria-labelledby="impact-title">
+  <section id="impact" class="section bg-darker" aria-labelledby="impact-title">
     <div class="container">
       <div class="impact-header" style="text-align: center; margin-bottom: 48px;">
         <div class="section-badge reveal">Credibility</div>
@@ -304,7 +306,7 @@
   <!-- =====================
        SERVICES SECTION
        ===================== -->
-  <section id="services" aria-labelledby="services-title">
+  <section id="services" class="section" aria-labelledby="services-title">
     <div class="container">
       <div class="services-header">
         <div class="section-badge reveal">Our Expertise</div>
@@ -593,7 +595,7 @@
   <!-- =====================
        CAMPAIGNS / PORTFOLIO SECTION
        ===================== -->
-  <section id="campaigns" aria-labelledby="campaigns-title">
+  <section id="campaigns" class="section bg-darker" aria-labelledby="campaigns-title">
     <div class="container">
       <div class="campaigns-header">
         <div class="section-badge reveal">Portfolio</div>
@@ -806,7 +808,7 @@
   <!-- =====================
        WHY CHOOSE US SECTION
        ===================== -->
-  <section id="why-us" aria-labelledby="why-title">
+  <section id="why-us" class="section" aria-labelledby="why-title">
     <div class="container">
       <div class="why-header">
         <div class="section-badge reveal">Why Cinemapremis</div>
@@ -891,7 +893,7 @@
   <!-- =====================
        TESTIMONIALS SECTION
        ===================== -->
-  <section id="testimonials" aria-labelledby="testimonials-title">
+  <section id="testimonials" class="section" aria-labelledby="testimonials-title">
     <div class="container">
       <div class="testimonials-header">
         <div class="section-badge reveal">Client Stories</div>
@@ -985,7 +987,7 @@
   <!-- =====================
        INSTAGRAM SECTION
        ===================== -->
-  <section id="instagram" aria-labelledby="instagram-title">
+  <section id="instagram" class="section bg-darker" aria-labelledby="instagram-title">
     <div class="container">
       <div class="instagram-header">
         <div class="section-badge reveal">Follow Our Journey</div>
@@ -1125,7 +1127,7 @@
   <!-- =====================
        CONTACT SECTION
        ===================== -->
-  <section id="contact" aria-labelledby="contact-title">
+  <section id="contact" class="section bg-darker" aria-labelledby="contact-title">
     <div class="container">
       <div class="contact-header">
         <div class="section-badge reveal">Get In Touch</div>
@@ -1308,7 +1310,7 @@
   <!-- =====================
        FOOTER
        ===================== -->
-  <footer role="contentinfo">
+  <footer class="bg-darker" role="contentinfo">
     <div class="container">
       <div class="footer-top">
 

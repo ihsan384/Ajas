@@ -42,8 +42,8 @@
   let W, H, particles = [], mouseX = 0, mouseY = 0;
 
   const PARTICLE_COUNT = window.innerWidth < 768 ? 30 : 60;
-  const PRIMARY = '#0047FF';
-  const PRIMARY_DIM = 'rgba(0,71,255,';
+  const PRIMARY = '#d4af37';
+  const PRIMARY_DIM = 'rgba(212, 175, 55,';
 
   function resize() {
     W = canvas.width = window.innerWidth;
@@ -617,7 +617,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(0,71,255,0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
     pointer-events: none;
     z-index: 3;
     animation: heroScan 6s linear infinite;
@@ -657,7 +657,7 @@
    ============================================================ */
 console.log(
   '%cCINEMAPREMIS\n%cMovie Promotion & PR Team\n%c✦ Powered by Cinemapremis',
-  'font-family: monospace; font-size: 22px; font-weight: bold; color: #0047FF;',
-  'font-family: monospace; font-size: 12px; color: #60a5fa;',
-  'font-family: monospace; font-size: 10px; color: #555;'
+  'font-family: monospace; font-size: 22px; font-weight: bold; color: #d4af37;',
+  'font-family: monospace; font-size: 12px; color: #f1c40f;',
+  'font-family: monospace; font-size: 10px; color: #a0a0a0;'
 );
