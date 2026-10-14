@@ -1480,6 +1480,8 @@ ul {
 .poster-bg-4 { background: linear-gradient(135deg, #0d0d00, #2a2a00, #d4af3710); }
 .poster-bg-5 { background: linear-gradient(135deg, #000d20, #001a40, #d4af3725); }
 .poster-bg-6 { background: linear-gradient(160deg, #100005, #300015, #d4af3715); }
+.poster-bg-7 { background: linear-gradient(135deg, #180800, #381500, #d4af3720); }
+.poster-bg-8 { background: linear-gradient(160deg, #180000, #3a0808, #d4af3720); }
 
 .poster-art {
   width: 100%;
