@@ -1482,6 +1482,11 @@ ul {
 .poster-bg-6 { background: linear-gradient(160deg, #100005, #300015, #d4af3715); }
 .poster-bg-7 { background: linear-gradient(135deg, #180800, #381500, #d4af3720); }
 .poster-bg-8 { background: linear-gradient(160deg, #180000, #3a0808, #d4af3720); }
+.poster-bg-9 { background: linear-gradient(135deg, #220303, #450808, #d4af3720); }
+.poster-bg-10 { background: linear-gradient(135deg, #1a1200, #352400, #d4af3720); }
+.poster-bg-11 { background: linear-gradient(160deg, #021a08, #073516, #d4af3720); }
+.poster-bg-12 { background: linear-gradient(135deg, #1f1400, #3d2a00, #d4af3725); }
+.poster-bg-13 { background: linear-gradient(160deg, #021526, #062e52, #d4af3720); }
 
 .poster-art {
   width: 100%;
