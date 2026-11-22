@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#aa8214"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Shield/Rounded Box -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)" stroke="url(#gold)" stroke-width="2"/>
+  
+  <!-- Film Strip Accent at Top -->
+  <rect x="12" y="10" width="40" height="8" rx="2" fill="#202020" stroke="url(#gold)" stroke-width="1"/>
+  <rect x="15" y="12" width="5" height="4" rx="1" fill="url(#gold)"/>
+  <rect x="25" y="12" width="5" height="4" rx="1" fill="url(#gold)"/>
+  <rect x="35" y="12" width="5" height="4" rx="1" fill="url(#gold)"/>
+  <rect x="45" y="12" width="5" height="4" rx="1" fill="url(#gold)"/>
+  
+  <!-- Cinematic C Logo -->
+  <path d="M42 28 C39 25 35 24 31 24 C22 24 17 30 17 38 C17 46 22 52 31 52 C36 52 40 50 43 47 L38 43 C36 45 34 46 31 46 C25 46 23 42 23 38 C23 34 25 30 31 30 C34 30 36 31 38 33 Z" fill="url(#gold)"/>
+  
+  <!-- Sparkle Star Accent -->
+  <path d="M47 34 L49 39 L54 40 L49 41 L47 46 L45 41 L40 40 L45 39 Z" fill="#ffffff" opacity="0.9"/>
+</svg>

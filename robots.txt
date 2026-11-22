@@ -1,0 +1,10 @@
+# robots.txt for Cinemapremis
+User-agent: *
+Allow: /
+
+# Disallow internal or scratch files if any
+Disallow: /scratch/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://cinemapremis.com/sitemap.xml
