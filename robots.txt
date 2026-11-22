@@ -7,4 +7,4 @@ Disallow: /scratch/
 Disallow: /.git/
 
 # Sitemap location
-Sitemap: https://cinemapremis.com/sitemap.xml
+Sitemap: https://cinemapremis.in/sitemap.xml
